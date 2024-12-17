@@ -1,0 +1,388 @@
+/* General Body Styles */
+body {
+    background-color: #f0f8f1; /* Warna latar belakang yang lebih lembut */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Card Style for Contained Elements */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid #2E8B57; /* Garis hijau gelap di sebelah kiri untuk kesan elegan */
+}
+
+/* Header Styles */
+h1, h3 {
+    color: #2E8B57; /* Warna hijau gelap */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* General Button Style (All buttons) */
+.btn {
+    background-color: #ffffff;
+    color: #2E8B57; /* Warna hijau gelap untuk teks */
+    border: 2px solid #2E8B57; /* Border hijau gelap */
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease; /* Efek transisi */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hover Effect for All Buttons */
+.btn:hover {
+    background-color: #2E8B57; /* Ganti latar belakang jadi hijau gelap saat hover */
+    color: #ffffff; /* Tulisan menjadi putih */
+    border-color: #2E8B57;
+    transform: translateY(-2px); /* Efek tombol sedikit terangkat */
+}
+
+/* Focus Effect for All Buttons */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(46, 139, 87, 0.2); /* Menambahkan efek fokus */
+}
+
+/* Specific Button Adjustments */
+
+/* For .btn-primary */
+.btn-primary {
+    background-color: #ffffff;
+    color: #2E8B57;
+    border-color: #2E8B57;
+}
+
+.btn-primary:hover {
+    background-color: #276e49; /* Hijau lebih gelap */
+    border-color: #276e49;
+}
+
+/* For .btn-back */
+.btn-back {
+    background-color: #2E8B57; /* Latar belakang hijau gelap */
+    color: white;
+    border-color: #2E8B57;
+}
+
+.btn-back:hover {
+    background-color: #1e6c46; /* Hijau lebih gelap saat hover */
+    border-color: #1e6c46;
+}
+
+/* For .btn-success (to ensure consistency) */
+.btn-success {
+    background-color: #ffffff;
+    color: #2E8B57;
+    border: 2px solid #2E8B57;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-success:hover {
+    background-color: #2E8B57;
+    color: #ffffff;
+    border-color: #2E8B57;
+    transform: translateY(-2px);
+}
+
+.btn-success:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(46, 139, 87, 0.2);
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #2E8B57;
+    color: white;
+}
+
+.table td {
+    background-color: #f9f9f9;
+}
+
+.table tr:nth-child(even) td {
+    background-color: #f1fdf2;
+}
+
+.table tbody tr:hover {
+    background-color: #f4f9f4;
+    cursor: pointer;
+}
+
+/* Form Styles */
+.form-label {
+    color: #2E8B57;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2E8B57;
+    outline: none;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .btn-primary, .btn-back, .btn-success {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #2E8B57;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #276e49;
+}
+
+.pagination .active {
+    background-color: #276e49;
+}
+
+/* Modal Styles (For confirmation or alerts) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal-footer .btn {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.modal-footer .btn-close {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.modal-footer .btn-close:hover {
+    background-color: #c0392b;
+}
+
+/* Form Styles (Specific) */
+.form-control {
+    background-color: #eaf4e1;
+    border: 1px solid #d1e7dd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #2E8B57;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    background-color: #eaf4e1;
+    border-color: #2E8B57;
+    box-shadow: 0 0 0 0.25rem rgba(46, 139, 87, 0.25);
+    outline: none;
+}
+
+/* Styling untuk select */
+.form-select {
+    background-color: #eaf4e1;
+    border: 1px solid #d1e7dd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #2E8B57;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-select:hover {
+    background-color: #d1e7dd;
+    border-color: #2E8B57;
+}
+
+.form-select:focus {
+    background-color: #eaf4e1;
+    border-color: #2E8B57;
+    box-shadow: 0 0 0 0.25rem rgba(46, 139, 87, 0.25);
+    outline: none;
+}
+
+/* Form Input Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #2E8B57; /* Ganti border menjadi hijau saat fokus */
+    outline: none;
+}
+
+/* Gaya untuk link Daftar */
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #2E8B57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+/* Badge Styles */
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.badge.available {
+    background-color: #2E8B57; /* Hijau untuk tersedia */
+}
+
+.badge.unavailable {
+    background-color: #e74c3c; /* Merah untuk penuh */
+}

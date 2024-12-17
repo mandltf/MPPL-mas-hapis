@@ -1,0 +1,152 @@
+/* General Body Styles */
+
+
+body {
+    background-color: #f0f8f1; /* Warna latar belakang yang lebih lembut */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #2E8B57;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 15px;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    transition: background 0.3s, transform 0.3s;
+}
+.sidebar a i {
+    margin-right: 10px;
+}
+.sidebar a:hover, .sidebar a.active {
+    background-color: #1e6c46;
+    transform: translateX(5px);
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    background: linear-gradient(to bottom, #f0f8f1, #e8f5e9);
+    border-bottom-right-radius: 15px;
+    overflow-y: auto;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+/* Header */
+.header {
+    background-color: #2E8B57;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.table th {
+    background-color: #2E8B57;
+    color: white;
+}
+.table tr:nth-child(even) td {
+    background-color: #f1fdf2;
+}
+.table tr:hover {
+    background-color: #f4f9f4;
+    cursor: pointer;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #ffffff;
+    color: #2E8B57;
+    border: 2px solid #2E8B57;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #2E8B57;
+    color: #fff;
+}
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.btn-warning {
+    border-color: #ffc107;
+    color: #ffc107;
+}
+.btn-warning:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+.btn-danger {
+    border-color: #e74c3c;
+    color: #e74c3c;
+}
+.btn-danger:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card-body .badge {
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 12px;
+}
+.container-btn {
+    margin-top: 30px;
+}

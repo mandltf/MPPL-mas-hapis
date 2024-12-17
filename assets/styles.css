@@ -1,0 +1,132 @@
+/* Umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f9f4; /* Warna latar belakang lembut */
+    color: #333;  /* Warna teks utama */
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2E8B57; /* Warna hijau utama */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    animation: fadeIn 1s ease-out; /* Animasi fade-in untuk hero */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-out; /* Animasi untuk judul */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    animation: fadeIn 2s ease-out; /* Animasi untuk paragraf */
+}
+
+.hero .tagline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    animation: fadeIn 2.5s ease-out; /* Animasi untuk tagline */
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #2E8B57;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+    animation: bounce 1s ease-out infinite; /* Animasi bounce saat muncul */
+}
+
+.hero .btn:hover {
+    background-color: #e6f1e6;  /* Hover efek hijau muda */
+    transform: translateY(-5px);
+}
+
+.hero .btn.secondary {
+    background-color: #ffffff;
+    color: #2E8B57;
+}
+
+.hero .btn.secondary:hover {
+    background-color: #e6f1e6;
+}
+
+/* Footer */
+.footer {
+    background-color: #2E8B57;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    animation: fadeIn 3s ease-out; /* Animasi fade-in untuk footer */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Mengurangi ukuran font di perangkat kecil */
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .hero .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
